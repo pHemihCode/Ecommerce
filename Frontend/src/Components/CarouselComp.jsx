@@ -1,11 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
-import FirstImg from '../assets/First.jpg'
 import SecondImg from '../assets/Two.jpg'
 import ThirdImg from '../assets/Third.jpg'
-import FourthImg from '../assets/Fourth.jpg'
 import FifthImg from '../assets/Fifth.jpg'
 import SixthImg from '../assets/Sixth.jpg'
-
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 function CarouselComp() {
   return (
     <Carousel className='w-full sm:h-96 lg:h-full theCarouse overflow-hidden my-5 sm:' controls={false}>
@@ -20,7 +18,7 @@ function CarouselComp() {
             </div>
           </div>
           <div className=''>
-            <img src={SecondImg} alt="" className='w-72 h-full' />
+            <LazyLoadImage src={SecondImg} alt="" className='w-72 h-full' />
           </div>
         </div>
       </Carousel.Item>
@@ -32,7 +30,7 @@ function CarouselComp() {
             <p className='sm:text-md lg:text-2xl xl:text-xl'>Browse our latest collection of <br/> fashion-forward clothing for all seasons.</p>
           </div>
            <div className=''>
-            <img src={ThirdImg} alt="" className='w-72 h-full' />
+            <LazyLoadImage src={ThirdImg} alt="" className='w-72 h-full' />
            </div>
         </div> 
       </Carousel.Item>
@@ -43,7 +41,7 @@ function CarouselComp() {
             <p className='sm:text-md lg:text-2xl xl:text-xl'>on all T-shirts in our summer collection</p>
          </div>
          <div className=''>
-           <img src={SixthImg} alt="" className='w-72 h-full' />
+           <LazyLoadImage src={SixthImg} alt="" className='w-72 h-full' />
          </div>
         </div>
       </Carousel.Item>
@@ -54,7 +52,7 @@ function CarouselComp() {
           <p className='sm:text-md lg:text-2xl xl:text-xl'>Enjoy up to 30% off on select computers and accessories</p>
          </div>
          <div className=''>
-          <img src={FifthImg} alt="" className='w-72 h-full ' />
+          <LazyLoadImage src={FifthImg} alt="" className='w-72 h-full ' />
          </div>
         </div>
       </Carousel.Item>
