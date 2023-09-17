@@ -18,7 +18,7 @@ function CarouselComp() {
             </div>
           </div>
           <div className=''>
-            <LazyLoadImage src={SecondImg} alt="" className='w-72 h-full' />
+            <LazyLoadImage src={SecondImg} alt="" threshold={100} effect="blur" className='w-72 h-full' />
           </div>
         </div>
       </Carousel.Item>
@@ -30,7 +30,7 @@ function CarouselComp() {
             <p className='sm:text-md lg:text-2xl xl:text-xl'>Browse our latest collection of <br/> fashion-forward clothing for all seasons.</p>
           </div>
            <div className=''>
-            <LazyLoadImage src={ThirdImg} alt="" className='w-72 h-full' />
+            <LazyLoadImage src={ThirdImg} alt="" threshold={100} effect="blur" className='w-72 h-full' />
            </div>
         </div> 
       </Carousel.Item>
@@ -41,7 +41,7 @@ function CarouselComp() {
             <p className='sm:text-md lg:text-2xl xl:text-xl'>on all T-shirts in our summer collection</p>
          </div>
          <div className=''>
-           <LazyLoadImage src={SixthImg} alt="" className='w-72 h-full' />
+           <LazyLoadImage src={SixthImg} alt="" threshold={100} effect="blur" className='w-72 h-full' />
          </div>
         </div>
       </Carousel.Item>
@@ -52,7 +52,7 @@ function CarouselComp() {
           <p className='sm:text-md lg:text-2xl xl:text-xl'>Enjoy up to 30% off on select computers and accessories</p>
          </div>
          <div className=''>
-          <LazyLoadImage src={FifthImg} alt="" className='w-72 h-full ' />
+          <LazyLoadImage src={FifthImg} alt="" threshold={100} effect="blur" className='w-72 h-full ' />
          </div>
         </div>
       </Carousel.Item>
