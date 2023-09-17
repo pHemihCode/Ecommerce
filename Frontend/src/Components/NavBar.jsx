@@ -41,7 +41,7 @@ function NavBar() {
         <p className='italic py-2 text-sm'><FcFlashOn className='inline' /> FREE SHIPPING ON OTHERS MORE THAN $100 <FcFlashOn className='inline' /></p>
       </div>
        <nav className='px-2 lg:flex flex-row justify-between items-center'>
-          <div className='flex flex-row space-x-2 items-center sm:pl-5 w-1/4'>
+          <div className='flex flex-row space-x-2 items-center sm:pl-5 lg:w-1/4'>
             <MobileNav />
             <Link to='/'>
             <h1 className='text-4xl font-bold'>MAFIA</h1>
@@ -52,7 +52,7 @@ function NavBar() {
             <Link to='products'>Products</Link>
             <Link to='contact'>Contact</Link>
           </div>
-           <div className='relative bottom-10 lg:bottom-0 w-1/4'>
+           <div className='relative bottom-10 lg:bottom-0 lg:w-1/4'>
               <div className='flex space-x-3 float-right text-2xl sm:pr-5 sm:text-3xl'>
                   <div className='flex flex-row items-center' ref={target} onClick={() => setShow(!show)}>
                   <Overlay target={target.current} show={show} placement="bottom">
