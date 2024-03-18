@@ -1,7 +1,7 @@
-import { useState, useRef } from 'react';
-import Button from 'react-bootstrap/Button';
-import Overlay from 'react-bootstrap/Overlay';
-import Tooltip from 'react-bootstrap/Tooltip';
+import { useState, useRef } from "react";
+import Button from "react-bootstrap/Button";
+import Overlay from "react-bootstrap/Overlay";
+import Tooltip from "react-bootstrap/Tooltip";
 
 function Profile() {
   const [show, setShow] = useState(false);

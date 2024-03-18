@@ -38,9 +38,17 @@ export default function CheckoutForm() {
   };
 
   return (
-    <form id="payment-form" className='form w-3/4 sm:w-3/5 p-4 lg:w-full lg:mr-12 xl:3/5' onSubmit={handleSubmit}>
+    <form
+      id="payment-form"
+      className="form w-3/4 sm:w-3/5 p-4 lg:w-full xl:3/5"
+      onSubmit={handleSubmit}
+    >
       <PaymentElement id="payment-element" />
-      <button className='btn' disabled={isProcessing || !stripe || !elements} id="submit">
+      <button
+        className="btn"
+        disabled={isProcessing || !stripe || !elements}
+        id="submit"
+      >
         <span id="button-text">
           {isProcessing ? "Processing ... " : "Pay now"}
         </span>
