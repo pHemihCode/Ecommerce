@@ -9,7 +9,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
 });
 
 // Enable CORS for your React app's origin
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors());
 
 app.use(express.static(process.env.STATIC_DIR));
 

@@ -14,7 +14,6 @@ function CurrentUser() {
         // User is signed out
         // ...
         setCurrentUser(null);
-        console.log("User is not signed in");
       }
     });
     return () => unsubscribe();

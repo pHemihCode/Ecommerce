@@ -15,9 +15,8 @@ function Products() {
     queryKey: ["products"],
     queryFn: async () => {
       const response = await axios.get(
-        "https://api.escuelajs.co/api/v1/products"
+        "https://api.escuelajs.co/api/v1/products?offset=0&limit=40"
       );
-      // console.log(response.data)
       const products = response.data;
       setBrands(products);
       return products;
@@ -68,7 +67,7 @@ function Products() {
             Your search is not found!
           </p>
         ) : (
-          <ProductDisplay products={search === "" ? brands : filteredData} />
+         <ProductDisplay products={search === "" ? brands : filteredData} />
         )}
       </div>
       <ToastContainer className="w-24 px-4 shadow-none mt-3" />
